@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registracija korisnika</title>
+       <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Mateo Tišljar">
+        <meta name="keywords" content="FOI, WebDiP">
+        <link href="mtisljar.css" rel="stylesheet" type="text/css">
+        <link href="mtisljar_mobiteli.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1 id="h1">Zadaca_02</h1>
+            
+        </header>
+        <aside>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html" class="selected">Početna stranica</a></li>
+                    <li><a href="omiljeno.html">Omiljeno</a></li>
+                    <li><a href="registracija.html">Registracija</a></li>
+                    <li><a href="prijava.html">Prijava</a></li>
+                    <li><a href="korisnici.html">Korisnici</a></li>
+                    <li><a href="era.html">Era model</a></li>
+                    <li><a href="navigacijski.html">Navigacijski</a></li>
+                    <li><a href="http://eportfolio.foi.hr/user/view.php?id=2998" target="_blank">E-portfolio</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <div id="sadrzaj">
+        
+        <section>
+            <form method="POST" name="form1" id="form1" action="https://barka.foi.hr/WebDiP/2015/materijali/zadace/ispis_forme.php" > 
+            <label class="labele" for="ime">Unesite svoje ime: </label>
+            <input type="text" class="inputi" id="ime" name="ime" placeholder="Ime" size="20" required="required"><br><br>
+            
+            <label class="labele" for="prezime">Unesite svoje prezime: </label>
+            <input type="text" class="inputi" id="prezime" name="prezime" placeholder="Prezime" size="30" required="required"><br><br>
+            
+            <label class="labele" for="korisnicko_ime">Korisničko ime: </label>
+            <input type="text" class="inputi" id="korisnicko_ime" name="korisnicko ime" maxlength="20" size="10" placeholder="Korsničko ime" required="required"><br><br>
+            
+            <label class="labele" for="password">Lozinka: </label>
+            <input type="password" class="inputi" name="password" id="password" required="required" placeholder="Lozinka"><br><br>
+            
+            <label class="labele" for="password2">Ponovno upišite lozinku: </label>
+            <input type="password" class="inputi" name="password2" id="password2" required="required" placeholder="Lozinka"><br><br>
+            
+            <label class="labele" for="enkripcija">Enkripcija: </label>
+            <keygen class="inputi" id="enkripcija"><br><br>
+            
+            <label class="labele" for="rodjendan_dan">Rođendan (dan): </label>
+            <input type="number" class="inputi" id="rodjendan_dan" name="rodjendan_dan" required="required" min="1" max="31"><br><br>
+            
+            <label class="labele" for="rodjendan_mjesec">Rođendan (mjesec): </label>
+            <input list="rodjendan_mjesec" class="inputi" name="rodjendan_mjesec"> 
+            <datalist id="rodjendan_mjesec" >
+                <option value="Siječanj">
+                <option value="Veljača">
+                <option value="Ožujak">
+                <option value="Travanj">
+                <option value="Svibanj">
+                <option value="Lipanj">
+                <option value="Srpanj">
+                <option value="Kolovoz">
+                <option value="Rujan">
+                <option value="Listopad">
+                <option value="Studeni">
+                <option value="Prosinac">
+            </datalist><br><br>
+            <label class="labele" for="rodjendan_godina">Rođendan (godina) </label>
+            <input type="number" class="inputi" id="rodjendan_godina" name="rodjendan_dan" required="required" min="1930" max="2016"><br><br>
+            
+            <label class="labele" for="spol">Spol: </label>
+            <select id="spol">
+                <option value="0">Muški</option>
+                <option value="1">Ženski</option>
+            </select>
+            <br><br>
+            <label class="labele" for="mobilni_telefon">Mobilni telefon: </label>
+            <select id="drzava">
+                <option value="0">+382 Crna Gora</option>
+                <option value="1">+383 Kosovo</option>
+                <option value="2">+385 Hrvatska</option>
+                <option value="3">+386 Slovenija</option>
+                <option value="4">+387 Bosna i Hercegovina</option>
+                
+            </select>
+            <input type="tel" class="inputi" id="mobilni_telefon"  maxlength="9"><br><br>
+            
+            <label class="labele" for="email">Email adresa: </label>
+            <input type="email" class="inputi" required="required" id="email" name="email"><br><br>
+            
+            <label class="labele" for="robot">Potvrdite da niste robot: </label>
+            <input type="checkbox" class="inputi" id="robot" name="robot" required="required"><br><br>
+            
+            <label class="labele" for="lokacija">Lokacija: </label>
+            <textarea id="lokacija" class="inputi" name ="lokacija" cols="100" rows="40" ></textarea><br><br>
+            
+            <label class="labele" for="slika">Slika: </label>
+            <input type="file" class="inputi" id="slika" name="slika" ><br><br>
+            
+            <label class="labele" for="obavijest">Obavijesti: </label>
+            <input type="radio" id="obavijest" name="obavijest" value="0">Da
+            <input type="radio" id="obavijest" name="obavijest" value="1">Ne<br><br>
+            
+            <input type="submit" name="submit" id="submit" value="Registriraj me" ><br><br>
+            
+            </form>
+        </section>
+        
+        </div>
+        <footer>
+
+            <div id="div1"><address>Kontakt: <a href="mailto:mtisljar@foi.hr">Mateo Tišljar</a></address>
+                <p>M. Tišljar</p></div>
+            <p>Vrijeme potrebno za zadacu: 30 sati</p>
+            <div id="div2"><figure>
+                <p>
+                    <a href="http://validator.w3.org/check/referer" target="_blank"><img class="foot" src="HTML5.png" alt="HTML5" ></a>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img class="foot" src="CSS3.png" alt="CSS" height="50" width="50"></a>
+                </p>
+            </figure></div>
+        </footer>
+    </body>
+</html>
